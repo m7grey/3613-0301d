@@ -15,6 +15,11 @@ public class TestCollection {
     collection1.remove(1);
       System.out.println("A list of cities in collection1:");
       System.out.println(collection1);
+      System.out.println(collection1.subList(1,3));
+
+
+//    !!!ppt origin wrong  Returns a sublist from fromIndex to toIndex-1.
+
 
       ArrayList<String> subcollection1 = new ArrayList<String>();
 //      subcollection1 = (ArrayList<String>collection1.subList(1,3));
@@ -27,32 +32,32 @@ public class TestCollection {
 //    System.out.println("\n" + collection1.size() +
 //       " cities are in collection1 now");
 
-    Collection<String> collection2 = new ArrayList<>();
-    collection2.add("Seattle"); 
-    collection2.add("Portland"); 
-    collection2.add("Los Angles"); 
-    collection2.add("Atlanta");
-
-
-    System.out.println("\nA list of cities in collection2:");
-    System.out.println(collection2);
-
-
-
-//to remember
-    ArrayList<String> c1 = (ArrayList<String>)(collection1.clone());
-    c1.addAll(collection2);
-    System.out.println("\nCities in collection1 or collection2: ");
-    System.out.println(c1);
-
-    c1 = (ArrayList<String>)(collection1.clone());
-    c1.retainAll(collection2);
-    System.out.print("\nCities in collection1 and collection2: ");
-    System.out.println(c1);
-
-    c1 = (ArrayList<String>)(collection1.clone());
-    c1.removeAll(collection2);
-    System.out.print("\nCities in collection1, but not in 2: ");
-    System.out.println(c1);
+//    Collection<String> collection2 = new ArrayList<>();
+//    collection2.add("Seattle");
+//    collection2.add("Portland");
+//    collection2.add("Los Angles");
+//    collection2.add("Atlanta");
+//
+//
+//    System.out.println("\nA list of cities in collection2:");
+//    System.out.println(collection2);
+//
+//
+//
+////to remember
+//    ArrayList<String> c1 = (ArrayList<String>)(collection1.clone());
+//    c1.addAll(collection2);
+//    System.out.println("\nCities in collection1 or collection2: ");
+//    System.out.println(c1);
+//
+//    c1 = (ArrayList<String>)(collection1.clone());
+//    c1.retainAll(collection2);
+//    System.out.print("\nCities in collection1 and collection2: ");
+//    System.out.println(c1);
+//
+//    c1 = (ArrayList<String>)(collection1.clone());
+//    c1.removeAll(collection2);
+//    System.out.print("\nCities in collection1, but not in 2: ");
+//    System.out.println(c1);
   }
 }
